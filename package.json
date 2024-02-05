@@ -1,0 +1,16 @@
+{
+    "name": "lezer-repro-2024-02-05",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "gen-lezer": "lezer-generator ./.grammar -o ./grammar.parser.ts",
+        "test": "bun --watch ./grammar.test.ts"
+    },
+    "dependencies": {
+        "@lezer/common": "^1.2.1",
+        "@lezer/generator": "^1.6.0",
+        "@lezer/highlight": "^1.2.0",
+        "@lezer/lr": "^1.4.0"
+    }
+}
